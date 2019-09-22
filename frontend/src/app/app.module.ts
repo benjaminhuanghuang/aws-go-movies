@@ -20,6 +20,7 @@ import { NewMovieComponent } from './components/new-movie/new-movie.component';
     NewMovieComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     HttpModule,
   ],
