@@ -80,7 +80,7 @@
 {
 "Sid": "1",
 "Effect": "Allow",
-"Action": "dynamodb:UpdateItem",
+"Action": "dynamodb:PutItem",
 "Resource": "arn:aws:dynamodb:us-west-2:173116748583:table/ben-movies"
 }
 ]

@@ -63,5 +63,18 @@ aws lambda delete-function --function-name UpdateMovie
 ```
 - delete a specific version or alias
 ```
-aws lambda delete-function --function-name UpdateMovie --qualifier
+aws lambda delete-function --function-name UpdateMovie --qualifier 1
+```
+
+
+## Publish version
+```
+aws lambda publish-version --function-name FindAllMovies --description 1.1.0
+```
+
+## Creat alias
+```
+aws lambda create-alias --function-name FindAllMovies \
+--name Production --description "Production environment" \
+--function-version 1
 ```
