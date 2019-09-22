@@ -14,7 +14,7 @@
 
 - Deploy, Update lambda functions, set roles for lambda functions
 
-- AWS API gateway and security
+- AWS API gateway, multi-version and security
 
 - Using DynamoDB 
 
