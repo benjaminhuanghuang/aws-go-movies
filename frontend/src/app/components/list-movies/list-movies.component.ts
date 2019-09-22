@@ -11,14 +11,19 @@ export class ListMoviesComponent implements OnInit {
 
   public movies: Movie[];
 
-  constructor(private moviesApiService: MoviesApiService) {
+  constructor() {
     this.movies = []
 
-    this.moviesApiService.findAll().subscribe(res => {
-      res.forEach(movie => {
-        this.movies.push(new Movie(movie.name, movie.description, movie.cover))
-      })
-    })
+    // this.moviesApiService.findAll().subscribe(res => {
+    //   res.forEach(movie => {
+    //     this.movies.push(new Movie(movie.name, movie.description, movie.cover))
+    //   })
+    // })
+    this.movies = [
+      new Movie("Avengers", "Some description", ""),
+      new Movie("Thor", "Some description", ""),
+      new Movie("Spiderman", "Some description"),
+    ]
   }
 
   ngOnInit() {

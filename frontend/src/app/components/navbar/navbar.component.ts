@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'movies-navbar',
@@ -8,12 +8,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) {}
+  constructor() {}
 
   ngOnInit() {}
 
   newMovie(content){
-    this.modalService.open(content);
+    // this.modalService.open(content);
   }
 
 }

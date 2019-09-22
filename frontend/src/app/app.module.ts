@@ -20,13 +20,12 @@ import { NewMovieComponent } from './components/new-movie/new-movie.component';
     NewMovieComponent
   ],
   imports: [
-    NgbModule.forRoot(),
     BrowserModule,
     HttpModule,
   ],
-  providers: [
-    MoviesApiService
-  ],
+  // providers: [
+  //   MoviesApiService
+  // ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
