@@ -53,3 +53,20 @@
 }
 ```
 - Attach this polich to the role "InsertMovieRole" of the lambda function 
+
+## Delete item Permission for lambda function.
+- Create policy for get item "DeleteItemMoviesTable"
+```
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Sid": "1",
+"Effect": "Allow",
+"Action": "dynamodb:DeleteItem",
+"Resource": "arn:aws:dynamodb:us-west-2:173116748583:table/ben-movies"
+}
+]
+}
+```
+- Attach this polich to the role "DeleteMovieRole" of the lambda function 

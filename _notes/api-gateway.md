@@ -12,3 +12,14 @@ In order to troubleshoot the API Gateway server error, we need to enable logs as
 
 Error log will be displayed in CloudWatch Logs Console
 
+
+## 
+get api id
+```
+aws apigateway get-rest-apis --query "items[?name==\`BenMoviesAPI\`].id" --output text
+```
+
+get resource id
+```
+aws apigateway get-resources --rest-api-id kgs89l6hx4 --query "items[?path==\`/movies\`].id"
+```
