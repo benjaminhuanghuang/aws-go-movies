@@ -1,4 +1,4 @@
-## Permission for lambda function.
+## Scan Permission for lambda function.
 - Create policy for scan "ScanMoviesTable"
 ```
 {
@@ -16,4 +16,22 @@
   ]
 }
 ```
-- Attach this polich to the role of the lambda function
+- Attach this polich to the role "FindAllMovieRole" of the lambda function
+
+
+## Get item Permission for lambda function.
+- Create policy for get item "GetItemMoviesTable"
+```
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Sid": "1",
+"Effect": "Allow",
+"Action": "dynamodb:GetItem",
+"Resource": "arn:aws:dynamodb:us-west-2:173116748583:table/ben-movies"
+}
+]
+}
+```
+- Attach this polich to the role "FindOneMovieRole" of the lambda function 
