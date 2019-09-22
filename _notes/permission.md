@@ -22,3 +22,6 @@ Create rols for each lambda function and attach the polich
 
 ## API Gateway logs
 Create role and attach policy AmazonAPIGatewayPushToCloudWatchLogs
+
+
+## Permission for dynamoDB

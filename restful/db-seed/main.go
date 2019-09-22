@@ -1,5 +1,10 @@
 package main
 
+/*
+Usage
+AWS_REGION=us-west-2 go run init-db.go
+*/
+
 import (
 	"context"
 	"encoding/json"
@@ -64,7 +69,7 @@ func insertMovie(cfg aws.Config, movie Movie) error {
 
 	svc := dynamodb.New(cfg)
 	req := svc.PutItemRequest(&dynamodb.PutItemInput{
-		TableName: aws.String("movies"),
+		TableName: aws.String("ben-movies"),
 		Item:      item,
 	})
 	_, err = req.Send(context.Background())
