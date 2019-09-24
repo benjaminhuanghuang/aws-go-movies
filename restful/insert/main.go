@@ -67,7 +67,8 @@ func insert(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespon
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
 		Headers: map[string]string{
-			"Content-Type": "application/json",
+			"Content-Type":                "application/json",
+			"Access-Control-Allow-Origin": "*", // address CORS issue
 		},
 	}, nil
 }
