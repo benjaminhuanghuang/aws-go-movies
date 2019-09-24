@@ -14,8 +14,10 @@ import (
 )
 
 type Movie struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
+	ID          string `json:"id"`
+	Name        string `json:"name"`
+	Cover       string `json:"cover"`
+	Description string `json:"description"`
 }
 
 func insert(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
@@ -45,6 +47,12 @@ func insert(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespon
 			},
 			"Name": dynamodb.AttributeValue{
 				S: aws.String(movie.Name),
+			},
+			"Cover": dynamodb.AttributeValue{
+				S: aws.String(movie.Cover),
+			},
+			"Description": dynamodb.AttributeValue{
+				S: aws.String(movie.Description),
 			},
 		},
 	})
