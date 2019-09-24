@@ -58,7 +58,7 @@ func findAll() (events.APIGatewayProxyResponse, error) {
 		StatusCode: 200,
 		Headers: map[string]string{
 			"Content-Type":                "application/json",
-			"Access-Control-Allow-Origin": "*",
+			"Access-Control-Allow-Origin": "*", // address CORS issue
 		},
 		Body: string(response),
 	}, nil
