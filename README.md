@@ -1,6 +1,7 @@
 
-# Practice project from Hands-On Serverless Application with Go
-- https://github.com/PacktPublishing/Hands-On-Serverless-Applications-with-Go
+# AWS Lambda + Go + DynamoDB + Angular + S3 
+- Hands-On Serverless Application with Go
+  - https://github.com/PacktPublishing/Hands-On-Serverless-Applications-with-Go
 
 
 

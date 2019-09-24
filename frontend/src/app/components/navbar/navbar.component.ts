@@ -8,11 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  newMovie(content){
+  newMovie(content) {
     // this.modalService.open(content);
   }
 
